@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlobalChat - Real-time Messaging</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-card">
+        <!-- Header -->
+        <div class="chat-header">
+          <h1 class="chat-title">💬 GlobalChat</h1>
+          <div class="online-status">
+            <span class="status-indicator"></span>
+            <span>Online</span>
+          </div>
+        </div>
+
+        <!-- Username Section -->
+        <div class="username-section">
+          <div class="username-input-group">
+            <input
+              type="text"
+              id="username"
+              class="username-input"
+              placeholder="Enter your name..."
+              maxlength="20"
+            />
+          </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="chat-messages" id="chatBox">
+          <div class="empty-state">
+            <div class="empty-state-icon">💬</div>
+            <p class="empty-state-text">
+              No messages yet. Start the conversation!
+            </p>
+          </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+          <div class="message-input-group">
+            <input
+              type="text"
+              id="message"
+              class="message-input"
+              placeholder="Type your message..."
+              maxlength="500"
+            />
+            <button class="send-button" id="sendButton">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 GlobalChat - Real-time messaging powered by SignalR</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.13/signalr.min.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>
